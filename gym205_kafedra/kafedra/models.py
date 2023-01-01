@@ -31,3 +31,19 @@ class gallery_main(models.Model):
     class Meta:
         verbose_name = 'Галерея новостей'
         verbose_name_plural = 'Галерея новостей'
+
+
+class gallery_foto(models.Model):
+    id = models.AutoField(primary_key=True, unique=True)
+    position = models.CharField('позиция', max_length=150)
+    title = models.CharField('название', max_length=150)
+    text = models.TextField('описание', max_length=2000)
+    show_item = models.BooleanField('Отобразить', default=False)
+    image = models.ImageField(null=True, blank=True, upload_to='static/img/gallery_photo/', verbose_name='Фото')
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Галерея фото'
+        verbose_name_plural = 'Галерея фото'
