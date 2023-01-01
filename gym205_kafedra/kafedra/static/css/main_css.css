@@ -501,6 +501,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-container-gallery {
 	padding-top: 30px;
+
 	}
 
 /* Contact */
@@ -681,6 +682,7 @@ p {
 
   .tm-gallery-container-2 {
     max-width: 350px;
+
   }
 
   .slick-dots li {
@@ -689,5 +691,6 @@ p {
 
   .tm-gallery-item {
     margin: 0;
+
   }
 }
